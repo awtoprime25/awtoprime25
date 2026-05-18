@@ -23,8 +23,6 @@
 **Frameworks & Tools**
 
 <img src="https://skillicons.dev/icons?i=react,docker,git&theme=dark&perline=3" />
-&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/awtoprime25/awtoprime25/main/leaflet-icon.svg" width="48" height="48" />
 
 </td>
 </tr>
