@@ -15,7 +15,7 @@
 
 **Languages**
 
-<img src="https://skillicons.dev/icons?i=cpp,ts,py,cs,js,html,css&theme=dark&perline=4" />
+<img src="https://skillicons.dev/icons?i=cpp,ts,py,cs,js,html,css,php&theme=dark&perline=4" />
 
 </td>
 <td align="center" width="50%">
