@@ -40,7 +40,7 @@
   <text x="190" y="155" font-family="JetBrains Mono, monospace" font-size="10" fill="#888888" letter-spacing="1">AWTOPRIME25 RECORDS</text>
   
   <!-- Right side label details -->
-  <text x="1010" y="135" font-family="JetBrains Mono, monospace" font-size="9" fill="#999999" text-anchor="end" letter-spacing="1">25</text>
+  <text x="1010" y="135" font-family="JetBrains Mono, monospace" font-size="9" fill="#999999" text-anchor="end" letter-spacing="1">25 MIN</text>
   <text x="1010" y="150" font-family="JetBrains Mono, monospace" font-size="9" fill="#999999" text-anchor="end" letter-spacing="1">TYPESHIFT</text>
   
   <!-- Tape window -->
