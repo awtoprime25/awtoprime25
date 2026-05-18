@@ -1,158 +1,111 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280">
   <defs>
-    <!-- Vinyl groove gradient -->
-    <radialGradient id="vinylGrad" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#1a1a1a"/>
-      <stop offset="15%" stop-color="#0a0a0a"/>
-      <stop offset="25%" stop-color="#111111"/>
-      <stop offset="35%" stop-color="#050505"/>
-      <stop offset="45%" stop-color="#0d0d0d"/>
-      <stop offset="55%" stop-color="#020202"/>
-      <stop offset="65%" stop-color="#080808"/>
-      <stop offset="75%" stop-color="#000000"/>
-      <stop offset="85%" stop-color="#030303"/>
-      <stop offset="100%" stop-color="#000000"/>
-    </radialGradient>
+    <linearGradient id="cassetteGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a2a2a"/>
+      <stop offset="10%" stop-color="#1a1a1a"/>
+      <stop offset="90%" stop-color="#111111"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
     
-    <!-- Label gradient -->
-    <radialGradient id="labelGrad" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="70%" stop-color="#e0e0e0"/>
-      <stop offset="100%" stop-color="#b0b0b0"/>
-    </radialGradient>
-    
-    <!-- Subtle noise filter -->
-    <filter id="noise">
-      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" result="noise"/>
-      <feBlend in="SourceGraphic" in2="noise" mode="overlay" opacity="0.03"/>
-    </filter>
-    
-    <!-- Drop shadow -->
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="15" flood-color="#000000" flood-opacity="0.8"/>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
   </defs>
   
   <!-- Background -->
-  <rect width="1200" height="300" fill="#0d0d0d"/>
+  <rect width="1200" height="280" fill="#0d0d0d"/>
   
-  <!-- Turntable platter base -->
-  <ellipse cx="600" cy="150" rx="260" ry="260" fill="#151515" filter="url(#shadow)"/>
+  <!-- Cassette body -->
+  <rect x="150" y="40" width="900" height="200" rx="12" fill="url(#cassetteGrad)" stroke="#333333" stroke-width="2"/>
   
-  <!-- Main vinyl record -->
-  <circle cx="600" cy="150" r="240" fill="url(#vinylGrad)"/>
+  <!-- Top edge highlight -->
+  <rect x="152" y="42" width="896" height="3" rx="1.5" fill="#444444" opacity="0.5"/>
   
-  <!-- Grooves - concentric circles with subtle variation -->
-  <g fill="none" stroke="#1a1a1a" stroke-width="0.5" opacity="0.6">
-    <circle cx="600" cy="150" r="235"/>
-    <circle cx="600" cy="150" r="230"/>
-    <circle cx="600" cy="150" r="225"/>
-    <circle cx="600" cy="150" r="220"/>
-    <circle cx="600" cy="150" r="215"/>
-    <circle cx="600" cy="150" r="210"/>
-    <circle cx="600" cy="150" r="205"/>
-    <circle cx="600" cy="150" r="200"/>
-    <circle cx="600" cy="150" r="195"/>
-    <circle cx="600" cy="150" r="190"/>
-    <circle cx="600" cy="150" r="185"/>
-    <circle cx="600" cy="150" r="180"/>
-    <circle cx="600" cy="150" r="175"/>
-    <circle cx="600" cy="150" r="170"/>
-    <circle cx="600" cy="150" r="165"/>
-    <circle cx="600" cy="150" r="160"/>
-    <circle cx="600" cy="150" r="155"/>
-    <circle cx="600" cy="150" r="150"/>
-    <circle cx="600" cy="150" r="145"/>
-    <circle cx="600" cy="150" r="140"/>
-    <circle cx="600" cy="150" r="135"/>
-    <circle cx="600" cy="150" r="130"/>
-    <circle cx="600" cy="150" r="125"/>
-    <circle cx="600" cy="150" r="120"/>
+  <!-- Label area -->
+  <rect x="170" y="55" width="860" height="120" rx="4" fill="#f0f0f0"/>
+  <rect x="175" y="60" width="850" height="110" rx="2" fill="#ffffff"/>
+  
+  <!-- Label lines (ruled paper look) -->
+  <line x1="175" y1="80" x2="1025" y2="80" stroke="#e0e0e0" stroke-width="1"/>
+  <line x1="175" y1="100" x2="1025" y2="100" stroke="#e0e0e0" stroke-width="1"/>
+  <line x1="175" y1="120" x2="1025" y2="120" stroke="#e0e0e0" stroke-width="1"/>
+  <line x1="175" y1="140" x2="1025" y2="140" stroke="#e0e0e0" stroke-width="1"/>
+  
+  <!-- WALTER text on label -->
+  <text x="600" y="108" font-family="JetBrains Mono, monospace" font-size="42" font-weight="bold" fill="#000000" text-anchor="middle" letter-spacing="8">WALTER</text>
+  
+  <!-- Handwritten style text -->
+  <text x="190" y="135" font-family="JetBrains Mono, monospace" font-size="11" fill="#666666" letter-spacing="1">MIXTAPE VOL. 1</text>
+  <text x="190" y="155" font-family="JetBrains Mono, monospace" font-size="10" fill="#888888" letter-spacing="1">AWTOPRIME25 RECORDS</text>
+  
+  <!-- Right side label details -->
+  <text x="1010" y="135" font-family="JetBrains Mono, monospace" font-size="9" fill="#999999" text-anchor="end" letter-spacing="1">90 MIN</text>
+  <text x="1010" y="150" font-family="JetBrains Mono, monospace" font-size="9" fill="#999999" text-anchor="end" letter-spacing="1">TYPE II</text>
+  
+  <!-- Tape window -->
+  <rect x="350" y="180" width="500" height="45" rx="6" fill="#0a0a0a" stroke="#222222" stroke-width="3"/>
+  
+  <!-- Tape reels -->
+  <g>
+    <!-- Left reel -->
+    <circle cx="440" cy="202" r="28" fill="#1a1a1a" stroke="#333333" stroke-width="1"/>
+    <circle cx="440" cy="202" r="22" fill="#222222"/>
+    <circle cx="440" cy="202" r="8" fill="#ffffff" opacity="0.1"/>
+    <!-- Reel holes -->
+    <circle cx="440" cy="190" r="2" fill="#0a0a0a"/>
+    <circle cx="450" cy="202" r="2" fill="#0a0a0a"/>
+    <circle cx="440" cy="214" r="2" fill="#0a0a0a"/>
+    <circle cx="430" cy="202" r="2" fill="#0a0a0a"/>
+    <circle cx="447" cy="195" r="2" fill="#0a0a0a"/>
+    <circle cx="447" cy="209" r="2" fill="#0a0a0a"/>
+    <circle cx="433" cy="209" r="2" fill="#0a0a0a"/>
+    <circle cx="433" cy="195" r="2" fill="#0a0a0a"/>
+    
+    <!-- Right reel -->
+    <circle cx="760" cy="202" r="28" fill="#1a1a1a" stroke="#333333" stroke-width="1"/>
+    <circle cx="760" cy="202" r="22" fill="#222222"/>
+    <circle cx="760" cy="202" r="8" fill="#ffffff" opacity="0.1"/>
+    <!-- Reel holes -->
+    <circle cx="760" cy="190" r="2" fill="#0a0a0a"/>
+    <circle cx="770" cy="202" r="2" fill="#0a0a0a"/>
+    <circle cx="760" cy="214" r="2" fill="#0a0a0a"/>
+    <circle cx="750" cy="202" r="2" fill="#0a0a0a"/>
+    <circle cx="767" cy="195" r="2" fill="#0a0a0a"/>
+    <circle cx="767" cy="209" r="2" fill="#0a0a0a"/>
+    <circle cx="753" cy="209" r="2" fill="#0a0a0a"/>
+    <circle cx="753" cy="195" r="2" fill="#0a0a0a"/>
+    
+    <!-- Tape spool (brown magnetic tape) -->
+    <path d="M 440,202 Q 500,175 550,190 Q 600,205 650,190 Q 700,175 760,202" 
+          fill="none" stroke="#3d2817" stroke-width="6" opacity="0.6"/>
+    <path d="M 440,202 Q 500,229 550,214 Q 600,199 650,214 Q 700,229 760,202" 
+          fill="none" stroke="#3d2817" stroke-width="6" opacity="0.6"/>
   </g>
   
-  <!-- Glare/light reflection on vinyl -->
-  <ellipse cx="500" cy="80" rx="120" ry="60" fill="#ffffff" opacity="0.03" transform="rotate(-30 500 80)"/>
+  <!-- Tape guides -->
+  <circle cx="380" cy="202" r="5" fill="#333333"/>
+  <circle cx="820" cy="202" r="5" fill="#333333"/>
   
-  <!-- Record label -->
-  <circle cx="600" cy="150" r="80" fill="url(#labelGrad)"/>
-  <circle cx="600" cy="150" r="75" fill="#f5f5f5"/>
+  <!-- Bottom tape pad -->
+  <rect x="340" y="230" width="520" height="8" rx="4" fill="#222222"/>
+  <rect x="340" y="232" width="520" height="3" rx="1.5" fill="#2a2a2a"/>
   
-  <!-- Label inner ring -->
-  <circle cx="600" cy="150" r="70" fill="none" stroke="#d0d0d0" stroke-width="0.5"/>
+  <!-- Bottom screw holes -->
+  <circle cx="170" cy="250" r="4" fill="#111111" stroke="#333333" stroke-width="1"/>
+  <circle cx="1030" cy="250" r="4" fill="#111111" stroke="#333333" stroke-width="1"/>
   
-  <!-- Spindle hole -->
-  <circle cx="600" cy="150" r="4" fill="#000000"/>
+  <!-- Top notches (cassette tabs) -->
+  <rect x="350" y="30" width="80" height="15" rx="3" fill="#0d0d0d"/>
+  <rect x="770" y="30" width="80" height="15" rx="3" fill="#0d0d0d"/>
   
-  <!-- Label text: WALTER -->
-  <text x="600" y="140" 
-        font-family="JetBrains Mono, monospace" 
-        font-size="22" 
-        font-weight="bold" 
-        fill="#000000" 
-        text-anchor="middle"
-        letter-spacing="4">WALTER</text>
+  <!-- Side A indicator -->
+  <text x="190" y="220" font-family="JetBrains Mono, monospace" font-size="14" font-weight="bold" fill="#555555" letter-spacing="2">SIDE A →</text>
   
-  <!-- Side labels -->
-  <text x="600" y="165" 
-        font-family="JetBrains Mono, monospace" 
-        font-size="8" 
-        fill="#666666" 
-        text-anchor="middle"
-        letter-spacing="1">STEREO • 33⅓ RPM</text>
+  <!-- Play arrow -->
+  <polygon points="1035,215 1035,235 1055,225" fill="#444444" opacity="0.5"/>
   
-  <!-- Side A marker -->
-  <text x="600" y="180" 
-        font-family="JetBrains Mono, monospace" 
-        font-size="10" 
-        font-weight="bold" 
-        fill="#000000" 
-        text-anchor="middle">SIDE A</text>
-  
-  <!-- Small track markers on label -->
-  <circle cx="555" cy="150" r="2" fill="#cccccc"/>
-  <circle cx="645" cy="150" r="2" fill="#cccccc"/>
-  <circle cx="600" cy="105" r="2" fill="#cccccc"/>
-  <circle cx="600" cy="195" r="2" fill="#cccccc"/>
-  
-  <!-- Run-out groove text -->
-  <path id="curve1" d="M 560,150 A 40,40 0 0,1 640,150" fill="none"/>
-  <text font-family="JetBrains Mono, monospace" font-size="5" fill="#888888" letter-spacing="1">
-    <textPath href="#curve1" startOffset="50%" text-anchor="middle">AWTOPRIME25 RECORDS</textPath>
-  </text>
-  
-  <!-- Tone arm (simplified) -->
-  <g opacity="0.9">
-    <!-- Arm base -->
-    <circle cx="920" cy="220" r="25" fill="#1a1a1a" stroke="#333333" stroke-width="2"/>
-    <circle cx="920" cy="220" r="20" fill="#0a0a0a"/>
-    
-    <!-- Arm -->
-    <line x1="920" y1="220" x2="750" y2="120" stroke="#c0c0c0" stroke-width="6" stroke-linecap="round"/>
-    <line x1="920" y1="220" x2="750" y2="120" stroke="#e0e0e0" stroke-width="3" stroke-linecap="round"/>
-    
-    <!-- Headshell -->
-    <line x1="750" y1="120" x2="720" y2="105" stroke="#888888" stroke-width="4" stroke-linecap="round"/>
-    
-    <!-- Cartridge -->
-    <rect x="710" y="98" width="15" height="10" fill="#333333" transform="rotate(-30 717 103)"/>
-    
-    <!-- Needle on record -->
-    <circle cx="718" cy="108" r="1.5" fill="#ffffff" opacity="0.8"/>
-  </g>
-  
-  <!-- Corner info (like a record sleeve) -->
-  <text x="40" y="40" 
-        font-family="JetBrains Mono, monospace" 
-        font-size="10" 
-        fill="#555555" 
-        letter-spacing="2">CAT.NO. AWTP-001</text>
-  
-  <text x="40" y="280" 
-        font-family="JetBrains Mono, monospace" 
-        font-size="10" 
-        fill="#555555" 
-        letter-spacing="2">MADE WITH CODE</text>
-        
-  <!-- Subtle texture overlay -->
-  <rect width="1200" height="300" fill="url(#noise)" opacity="0.5"/>
+  <!-- Subtle top-left branding -->
+  <text x="40" y="30" font-family="JetBrains Mono, monospace" font-size="8" fill="#333333" letter-spacing="2">HI-FI STEREO</text>
+  <text x="40" y="265" font-family="JetBrains Mono, monospace" font-size="8" fill="#333333" letter-spacing="2">NORMAL BIAS • 120 μs EQ</text>
 </svg>
