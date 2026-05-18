@@ -40,8 +40,8 @@
   <text x="190" y="155" font-family="JetBrains Mono, monospace" font-size="10" fill="#888888" letter-spacing="1">AWTOPRIME25 RECORDS</text>
   
   <!-- Right side label details -->
-  <text x="1010" y="135" font-family="JetBrains Mono, monospace" font-size="9" fill="#999999" text-anchor="end" letter-spacing="1">90 MIN</text>
-  <text x="1010" y="150" font-family="JetBrains Mono, monospace" font-size="9" fill="#999999" text-anchor="end" letter-spacing="1">TYPE II</text>
+  <text x="1010" y="135" font-family="JetBrains Mono, monospace" font-size="9" fill="#999999" text-anchor="end" letter-spacing="1">25</text>
+  <text x="1010" y="150" font-family="JetBrains Mono, monospace" font-size="9" fill="#999999" text-anchor="end" letter-spacing="1">TYPESHIFT</text>
   
   <!-- Tape window -->
   <rect x="350" y="180" width="500" height="45" rx="6" fill="#0a0a0a" stroke="#222222" stroke-width="3"/>
@@ -100,7 +100,7 @@
   <rect x="770" y="30" width="80" height="15" rx="3" fill="#0d0d0d"/>
   
   <!-- Side A indicator -->
-  <text x="190" y="220" font-family="JetBrains Mono, monospace" font-size="14" font-weight="bold" fill="#555555" letter-spacing="2">SIDE A →</text>
+  <text x="190" y="220" font-family="JetBrains Mono, monospace" font-size="14" font-weight="bold" fill="#555555" letter-spacing="2">SIDE W →</text>
   
   <!-- Play arrow -->
   <polygon points="1035,215 1035,235 1055,225" fill="#444444" opacity="0.5"/>
