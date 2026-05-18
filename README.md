@@ -22,7 +22,7 @@
 
 **Frameworks & Tools**
 
-<img src="https://skillicons.dev/icons?i=react,docker,git,leaflet&theme=dark&perline=3" />
+<img src="https://skillicons.dev/icons?i=react,docker,git&theme=dark&perline=3" />
 
 </td>
 </tr>
