@@ -1,16 +1,94 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
-  <rect width="800" height="200" fill="#000000"/>
-  <rect x="40" y="80" width="40" height="120" fill="#ffffff" opacity="0.9"/>
-  <rect x="100" y="40" width="40" height="160" fill="#ffffff" opacity="0.9"/>
-  <rect x="160" y="100" width="40" height="100" fill="#ffffff" opacity="0.6"/>
-  <rect x="220" y="20" width="40" height="180" fill="#ffffff"/>
-  <rect x="280" y="60" width="40" height="140" fill="#ffffff" opacity="0.9"/>
-  <rect x="340" y="120" width="40" height="80" fill="#ffffff" opacity="0.5"/>
-  <rect x="400" y="30" width="40" height="170" fill="#ffffff" opacity="0.9"/>
-  <rect x="460" y="90" width="40" height="110" fill="#ffffff" opacity="0.7"/>
-  <rect x="520" y="50" width="40" height="150" fill="#ffffff"/>
-  <rect x="580" y="110" width="40" height="90" fill="#ffffff" opacity="0.6"/>
-  <rect x="640" y="25" width="40" height="175" fill="#ffffff" opacity="0.9"/>
-  <rect x="700" y="70" width="40" height="130" fill="#ffffff" opacity="0.8"/>
-  <text x="400" y="115" font-family="JetBrains Mono, monospace" font-size="52" font-weight="bold" fill="#ffffff" text-anchor="middle">Walter</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 250">
+  <rect width="1200" height="250" fill="#0a0a0a"/>
+  
+  <!-- Background subtle grid -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="250" fill="url(#grid)"/>
+  
+  <!-- Frequency waves - multiple layers -->
+  <g opacity="0.3">
+    <path d="M0,125 Q30,80 60,125 T120,125 T180,125 T240,125 T300,125 T360,125 T420,125 T480,125 T540,125 T600,125 T660,125 T720,125 T780,125 T840,125 T900,125 T960,125 T1020,125 T1080,125 T1140,125 T1200,125" 
+          fill="none" stroke="#ffffff" stroke-width="1"/>
+  </g>
+  
+  <!-- Main waveform - bass frequencies -->
+  <path d="M0,125 
+           C50,125 50,40 100,40 
+           C150,40 150,180 200,180 
+           C250,180 250,60 300,60 
+           C350,60 350,200 400,200 
+           C450,200 450,20 500,20 
+           C550,20 550,160 600,160 
+           C650,160 650,50 700,50 
+           C750,50 750,190 800,190 
+           C850,190 850,30 900,30 
+           C950,30 950,170 1000,170 
+           C1050,170 1050,70 1100,70 
+           C1150,70 1150,125 1200,125" 
+        fill="none" stroke="#ffffff" stroke-width="2.5" opacity="0.9"/>
+  
+  <!-- Mid frequencies - tighter waves -->
+  <path d="M0,125 
+           Q25,90 50,125 T100,125 T150,125 T200,125 T250,125 T300,125 T350,125 T400,125 
+           T450,125 T500,125 T550,125 T600,125 T650,125 T700,125 T750,125 T800,125 
+           T850,125 T900,125 T950,125 T1000,125 T1050,125 T1100,125 T1150,125 T1200,125" 
+        fill="none" stroke="#c0c0c0" stroke-width="1.5" opacity="0.6"/>
+        
+  <!-- High frequencies - rapid oscillation -->
+  <path d="M0,125 
+           L10,110 L20,140 L30,115 L40,135 L50,120 L60,130 L70,118 L80,132 L90,122 
+           L100,128 L110,120 L120,130 L130,118 L140,132 L150,122 L160,128 L170,120 
+           L180,130 L190,118 L200,132 L210,122 L220,128 L230,120 L240,130 L250,118 
+           L260,132 L270,122 L280,128 L290,120 L300,130 L310,118 L320,132 L330,122 
+           L340,128 L350,120 L360,130 L370,118 L380,132 L390,122 L400,128 L410,120 
+           L420,130 L430,118 L440,132 L450,122 L460,128 L470,120 L480,130 L490,118 
+           L500,132 L510,122 L520,128 L530,120 L540,130 L550,118 L560,132 L570,122 
+           L580,128 L590,120 L600,130 L610,118 L620,132 L630,122 L640,128 L650,120 
+           L660,130 L670,118 L680,132 L690,122 L700,128 L710,120 L720,130 L730,118 
+           L740,132 L750,122 L760,128 L770,120 L780,130 L790,118 L800,132 L810,122 
+           L820,128 L830,120 L840,130 L850,118 L860,132 L870,122 L880,128 L890,120 
+           L900,130 L910,118 L920,132 L930,122 L940,128 L950,120 L960,130 L970,118 
+           L980,132 L990,122 L1000,128 L1010,120 L1020,130 L1030,118 L1040,132 L1050,122 
+           L1060,128 L1070,120 L1080,130 L1090,118 L1100,132 L1110,122 L1120,128 L1130,120 
+           L1140,130 L1150,118 L1160,132 L1170,122 L1180,128 L1190,120 L1200,130" 
+        fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.4"/>
+  
+  <!-- Vertical beat markers -->
+  <line x1="200" y1="0" x2="200" y2="250" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
+  <line x1="400" y1="0" x2="400" y2="250" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
+  <line x1="600" y1="0" x2="600" y2="250" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
+  <line x1="800" y1="0" x2="800" y2="250" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
+  <line x1="1000" y1="0" x2="1000" y2="250" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
+  
+  <!-- Center line -->
+  <line x1="0" y1="125" x2="1200" y2="125" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+  
+  <!-- Walter text with glow effect -->
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <text x="600" y="140" 
+        font-family="JetBrains Mono, monospace" 
+        font-size="64" 
+        font-weight="bold" 
+        fill="#ffffff" 
+        text-anchor="middle"
+        filter="url(#glow)">Walter</text>
+        
+  <!-- Subtle corner accents -->
+  <path d="M20,20 L20,50 M20,20 L50,20" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <path d="M1180,20 L1180,50 M1180,20 L1150,20" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <path d="M20,230 L20,200 M20,230 L50,230" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <path d="M1180,230 L1180,200 M1180,230 L1150,230" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
 </svg>
