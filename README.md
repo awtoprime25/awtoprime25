@@ -23,6 +23,8 @@
 **Frameworks & Tools**
 
 <img src="https://skillicons.dev/icons?i=react,docker,git&theme=dark&perline=3" />
+<br/>
+<img src="https://img.shields.io/badge/Leaflet.js-199900?style=for-the-badge&logo=leaflet&logoColor=white" />
 
 </td>
 </tr>
