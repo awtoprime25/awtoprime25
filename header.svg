@@ -1,111 +1,94 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200">
+  <rect width="1200" height="200" fill="#0a0a0a"/>
+  
+  <!-- Background subtle grid -->
   <defs>
-    <linearGradient id="cassetteGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#2a2a2a"/>
-      <stop offset="10%" stop-color="#1a1a1a"/>
-      <stop offset="90%" stop-color="#111111"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
-    </linearGradient>
-    
-    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="200" fill="url(#grid)"/>
+  
+  <!-- Frequency waves - multiple layers -->
+  <g opacity="0.3">
+    <path d="M0,100 Q30,55 60,100 T120,100 T180,100 T240,100 T300,100 T360,100 T420,100 T480,100 T540,100 T600,100 T660,100 T720,100 T780,100 T840,100 T900,100 T960,100 T1020,100 T1080,100 T1140,100 T1200,100" 
+          fill="none" stroke="#ffffff" stroke-width="1"/>
+  </g>
+  
+  <!-- Main waveform - bass frequencies -->
+  <path d="M0,100 
+           C50,100 50,15 100,15 
+           C150,15 150,155 200,155 
+           C250,155 250,35 300,35 
+           C350,35 350,175 400,175 
+           C450,175 450,-5 500,-5 
+           C550,-5 550,135 600,135 
+           C650,135 650,25 700,25 
+           C750,25 750,165 800,165 
+           C850,165 850,5 900,5 
+           C950,5 950,145 1000,145 
+           C1050,145 1050,45 1100,45 
+           C1150,45 1150,100 1200,100" 
+        fill="none" stroke="#ffffff" stroke-width="2.5" opacity="0.9"/>
+  
+  <!-- Mid frequencies - tighter waves -->
+  <path d="M0,100 
+           Q25,65 50,100 T100,100 T150,100 T200,100 T250,100 T300,100 T350,100 T400,100 
+           T450,100 T500,100 T550,100 T600,100 T650,100 T700,100 T750,100 T800,100 
+           T850,100 T900,100 T950,100 T1000,100 T1050,100 T1100,100 T1150,100 T1200,100" 
+        fill="none" stroke="#c0c0c0" stroke-width="1.5" opacity="0.6"/>
+        
+  <!-- High frequencies - rapid oscillation -->
+  <path d="M0,100 
+           L10,85 L20,115 L30,90 L40,110 L50,95 L60,105 L70,93 L80,107 L90,97 
+           L100,103 L110,95 L120,105 L130,93 L140,107 L150,97 L160,103 L170,95 
+           L180,105 L190,93 L200,107 L210,97 L220,103 L230,95 L240,105 L250,93 
+           L260,107 L270,97 L280,103 L290,95 L300,105 L310,93 L320,107 L330,97 
+           L340,103 L350,95 L360,105 L370,93 L380,107 L390,97 L400,103 L410,95 
+           L420,105 L430,93 L440,107 L450,97 L460,103 L470,95 L480,105 L490,93 
+           L500,107 L510,97 L520,103 L530,95 L540,105 L550,93 L560,107 L570,97 
+           L580,103 L590,95 L600,105 L610,93 L620,107 L630,97 L640,103 L650,95 
+           L660,105 L670,93 L680,107 L690,97 L700,103 L710,95 L720,105 L730,93 
+           L740,107 L750,97 L760,103 L770,95 L780,105 L790,93 L800,107 L810,97 
+           L820,103 L830,95 L840,105 L850,93 L860,107 L870,97 L880,103 L890,95 
+           L900,105 L910,93 L920,107 L930,97 L940,103 L950,95 L960,105 L970,93 
+           L980,107 L990,97 L1000,103 L1010,95 L1020,105 L1030,93 L1040,107 L1050,97 
+           L1060,103 L1070,95 L1080,105 L1090,93 L1100,107 L1110,97 L1120,103 L1130,95 
+           L1140,105 L1150,93 L1160,107 L1170,97 L1180,103 L1190,95 L1200,105" 
+        fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.4"/>
+  
+  <!-- Vertical beat markers -->
+  <line x1="200" y1="0" x2="200" y2="200" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
+  <line x1="400" y1="0" x2="400" y2="200" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
+  <line x1="600" y1="0" x2="600" y2="200" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
+  <line x1="800" y1="0" x2="800" y2="200" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
+  <line x1="1000" y1="0" x2="1000" y2="200" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
+  
+  <!-- Center line -->
+  <line x1="0" y1="100" x2="1200" y2="100" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+  
+  <!-- Walter text with glow effect -->
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
   </defs>
   
-  <!-- Background -->
-  <rect width="1200" height="280" fill="#0d0d0d"/>
-  
-  <!-- Cassette body -->
-  <rect x="150" y="40" width="900" height="200" rx="12" fill="url(#cassetteGrad)" stroke="#333333" stroke-width="2"/>
-  
-  <!-- Top edge highlight -->
-  <rect x="152" y="42" width="896" height="3" rx="1.5" fill="#444444" opacity="0.5"/>
-  
-  <!-- Label area -->
-  <rect x="170" y="55" width="860" height="120" rx="4" fill="#f0f0f0"/>
-  <rect x="175" y="60" width="850" height="110" rx="2" fill="#ffffff"/>
-  
-  <!-- Label lines (ruled paper look) -->
-  <line x1="175" y1="80" x2="1025" y2="80" stroke="#e0e0e0" stroke-width="1"/>
-  <line x1="175" y1="100" x2="1025" y2="100" stroke="#e0e0e0" stroke-width="1"/>
-  <line x1="175" y1="120" x2="1025" y2="120" stroke="#e0e0e0" stroke-width="1"/>
-  <line x1="175" y1="140" x2="1025" y2="140" stroke="#e0e0e0" stroke-width="1"/>
-  
-  <!-- WALTER text on label -->
-  <text x="600" y="108" font-family="JetBrains Mono, monospace" font-size="42" font-weight="bold" fill="#000000" text-anchor="middle" letter-spacing="8">WALTER</text>
-  
-  <!-- Handwritten style text -->
-  <text x="190" y="135" font-family="JetBrains Mono, monospace" font-size="11" fill="#666666" letter-spacing="1">MIXTAPE VOL. 1</text>
-  <text x="190" y="155" font-family="JetBrains Mono, monospace" font-size="10" fill="#888888" letter-spacing="1">AWTOPRIME25 RECORDS</text>
-  
-  <!-- Right side label details -->
-  <text x="1010" y="135" font-family="JetBrains Mono, monospace" font-size="9" fill="#999999" text-anchor="end" letter-spacing="1">90 MIN</text>
-  <text x="1010" y="150" font-family="JetBrains Mono, monospace" font-size="9" fill="#999999" text-anchor="end" letter-spacing="1">TYPE II</text>
-  
-  <!-- Tape window -->
-  <rect x="350" y="180" width="500" height="45" rx="6" fill="#0a0a0a" stroke="#222222" stroke-width="3"/>
-  
-  <!-- Tape reels -->
-  <g>
-    <!-- Left reel -->
-    <circle cx="440" cy="202" r="28" fill="#1a1a1a" stroke="#333333" stroke-width="1"/>
-    <circle cx="440" cy="202" r="22" fill="#222222"/>
-    <circle cx="440" cy="202" r="8" fill="#ffffff" opacity="0.1"/>
-    <!-- Reel holes -->
-    <circle cx="440" cy="190" r="2" fill="#0a0a0a"/>
-    <circle cx="450" cy="202" r="2" fill="#0a0a0a"/>
-    <circle cx="440" cy="214" r="2" fill="#0a0a0a"/>
-    <circle cx="430" cy="202" r="2" fill="#0a0a0a"/>
-    <circle cx="447" cy="195" r="2" fill="#0a0a0a"/>
-    <circle cx="447" cy="209" r="2" fill="#0a0a0a"/>
-    <circle cx="433" cy="209" r="2" fill="#0a0a0a"/>
-    <circle cx="433" cy="195" r="2" fill="#0a0a0a"/>
-    
-    <!-- Right reel -->
-    <circle cx="760" cy="202" r="28" fill="#1a1a1a" stroke="#333333" stroke-width="1"/>
-    <circle cx="760" cy="202" r="22" fill="#222222"/>
-    <circle cx="760" cy="202" r="8" fill="#ffffff" opacity="0.1"/>
-    <!-- Reel holes -->
-    <circle cx="760" cy="190" r="2" fill="#0a0a0a"/>
-    <circle cx="770" cy="202" r="2" fill="#0a0a0a"/>
-    <circle cx="760" cy="214" r="2" fill="#0a0a0a"/>
-    <circle cx="750" cy="202" r="2" fill="#0a0a0a"/>
-    <circle cx="767" cy="195" r="2" fill="#0a0a0a"/>
-    <circle cx="767" cy="209" r="2" fill="#0a0a0a"/>
-    <circle cx="753" cy="209" r="2" fill="#0a0a0a"/>
-    <circle cx="753" cy="195" r="2" fill="#0a0a0a"/>
-    
-    <!-- Tape spool (brown magnetic tape) -->
-    <path d="M 440,202 Q 500,175 550,190 Q 600,205 650,190 Q 700,175 760,202" 
-          fill="none" stroke="#3d2817" stroke-width="6" opacity="0.6"/>
-    <path d="M 440,202 Q 500,229 550,214 Q 600,199 650,214 Q 700,229 760,202" 
-          fill="none" stroke="#3d2817" stroke-width="6" opacity="0.6"/>
-  </g>
-  
-  <!-- Tape guides -->
-  <circle cx="380" cy="202" r="5" fill="#333333"/>
-  <circle cx="820" cy="202" r="5" fill="#333333"/>
-  
-  <!-- Bottom tape pad -->
-  <rect x="340" y="230" width="520" height="8" rx="4" fill="#222222"/>
-  <rect x="340" y="232" width="520" height="3" rx="1.5" fill="#2a2a2a"/>
-  
-  <!-- Bottom screw holes -->
-  <circle cx="170" cy="250" r="4" fill="#111111" stroke="#333333" stroke-width="1"/>
-  <circle cx="1030" cy="250" r="4" fill="#111111" stroke="#333333" stroke-width="1"/>
-  
-  <!-- Top notches (cassette tabs) -->
-  <rect x="350" y="30" width="80" height="15" rx="3" fill="#0d0d0d"/>
-  <rect x="770" y="30" width="80" height="15" rx="3" fill="#0d0d0d"/>
-  
-  <!-- Side A indicator -->
-  <text x="190" y="220" font-family="JetBrains Mono, monospace" font-size="14" font-weight="bold" fill="#555555" letter-spacing="2">SIDE A →</text>
-  
-  <!-- Play arrow -->
-  <polygon points="1035,215 1035,235 1055,225" fill="#444444" opacity="0.5"/>
-  
-  <!-- Subtle top-left branding -->
-  <text x="40" y="30" font-family="JetBrains Mono, monospace" font-size="8" fill="#333333" letter-spacing="2">HI-FI STEREO</text>
-  <text x="40" y="265" font-family="JetBrains Mono, monospace" font-size="8" fill="#333333" letter-spacing="2">NORMAL BIAS • 120 μs EQ</text>
+  <text x="600" y="115" 
+        font-family="JetBrains Mono, monospace" 
+        font-size="64" 
+        font-weight="bold" 
+        fill="#ffffff" 
+        text-anchor="middle"
+        filter="url(#glow)">Walter</text>
+        
+  <!-- Subtle corner accents -->
+  <path d="M20,20 L20,50 M20,20 L50,20" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <path d="M1180,20 L1180,50 M1180,20 L1150,20" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <path d="M20,180 L20,150 M20,180 L50,180" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <path d="M1180,180 L1180,150 M1180,180 L1150,180" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
 </svg>

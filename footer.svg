@@ -1,40 +1,64 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150">
-  <rect width="1200" height="150" fill="#0d0d0d"/>
+  <rect width="1200" height="150" fill="#0a0a0a"/>
   
-  <!-- Subtle bottom shelf/surface -->
-  <rect x="0" y="130" width="1200" height="20" fill="#0a0a0a"/>
+  <!-- Top accent line -->
+  <line x1="0" y1="1" x2="1200" y2="1" stroke="#ffffff" stroke-width="1" opacity="0.15"/>
   
-  <!-- Vinyl record half (like it's on the shelf) -->
-  <g transform="translate(950, 95)">
-    <ellipse cx="0" cy="0" rx="55" ry="55" fill="#111111"/>
-    <ellipse cx="0" cy="0" rx="50" ry="50" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
-    <ellipse cx="0" cy="0" rx="45" ry="45" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
-    <ellipse cx="0" cy="0" rx="40" ry="40" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
-    <ellipse cx="0" cy="0" rx="35" ry="35" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
-    <circle cx="0" cy="0" r="15" fill="#e0e0e0"/>
-    <circle cx="0" cy="0" r="2" fill="#000000"/>
-    <text x="0" y="3" font-family="JetBrains Mono, monospace" font-size="4" font-weight="bold" fill="#000000" text-anchor="middle">B</text>
-  </g>
+  <!-- Frequency spectrum bars -->
+  <rect x="80" y="60" width="6" height="70" fill="#ffffff" opacity="0.9"/>
+  <rect x="100" y="85" width="6" height="45" fill="#ffffff" opacity="0.6"/>
+  <rect x="120" y="40" width="6" height="90" fill="#ffffff" opacity="0.95"/>
+  <rect x="140" y="100" width="6" height="30" fill="#ffffff" opacity="0.4"/>
+  <rect x="160" y="20" width="6" height="110" fill="#ffffff" opacity="0.85"/>
+  <rect x="180" y="75" width="6" height="55" fill="#ffffff" opacity="0.7"/>
+  <rect x="200" y="110" width="6" height="20" fill="#ffffff" opacity="0.35"/>
+  <rect x="220" y="30" width="6" height="100" fill="#ffffff" opacity="0.9"/>
+  <rect x="240" y="95" width="6" height="35" fill="#ffffff" opacity="0.5"/>
+  <rect x="260" y="50" width="6" height="80" fill="#ffffff" opacity="0.8"/>
+  <rect x="280" y="70" width="6" height="60" fill="#ffffff" opacity="0.65"/>
+  <rect x="300" y="35" width="6" height="95" fill="#ffffff" opacity="0.92"/>
+  <rect x="320" y="105" width="6" height="25" fill="#ffffff" opacity="0.3"/>
+  <rect x="340" y="45" width="6" height="85" fill="#ffffff" opacity="0.88"/>
+  <rect x="360" y="80" width="6" height="50" fill="#ffffff" opacity="0.6"/>
+  <rect x="380" y="25" width="6" height="105" fill="#ffffff" opacity="0.95"/>
+  <rect x="400" y="115" width="6" height="15" fill="#ffffff" opacity="0.25"/>
+  <rect x="420" y="55" width="6" height="75" fill="#ffffff" opacity="0.85"/>
+  <rect x="440" y="90" width="6" height="40" fill="#ffffff" opacity="0.55"/>
+  <rect x="460" y="15" width="6" height="115" fill="#ffffff" opacity="0.98"/>
+  <rect x="480" y="100" width="6" height="30" fill="#ffffff" opacity="0.45"/>
+  <rect x="500" y="40" width="6" height="90" fill="#ffffff" opacity="0.9"/>
+  <rect x="520" y="65" width="6" height="65" fill="#ffffff" opacity="0.75"/>
+  <rect x="540" y="30" width="6" height="100" fill="#ffffff" opacity="0.93"/>
+  <rect x="560" y="110" width="6" height="20" fill="#ffffff" opacity="0.28"/>
+  <rect x="580" y="50" width="6" height="80" fill="#ffffff" opacity="0.87"/>
+  <rect x="600" y="85" width="6" height="45" fill="#ffffff" opacity="0.58"/>
+  <rect x="620" y="20" width="6" height="110" fill="#ffffff" opacity="0.96"/>
+  <rect x="640" y="105" width="6" height="25" fill="#ffffff" opacity="0.32"/>
+  <rect x="660" y="35" width="6" height="95" fill="#ffffff" opacity="0.91"/>
+  <rect x="680" y="70" width="6" height="60" fill="#ffffff" opacity="0.68"/>
+  <rect x="700" y="45" width="6" height="85" fill="#ffffff" opacity="0.89"/>
+  <rect x="720" y="95" width="6" height="35" fill="#ffffff" opacity="0.52"/>
+  <rect x="740" y="25" width="6" height="105" fill="#ffffff" opacity="0.94"/>
+  <rect x="760" y="115" width="6" height="15" fill="#ffffff" opacity="0.22"/>
+  <rect x="780" y="55" width="6" height="75" fill="#ffffff" opacity="0.84"/>
+  <rect x="800" y="75" width="6" height="55" fill="#ffffff" opacity="0.72"/>
+  <rect x="820" y="40" width="6" height="90" fill="#ffffff" opacity="0.9"/>
+  <rect x="840" y="100" width="6" height="30" fill="#ffffff" opacity="0.48"/>
+  <rect x="860" y="30" width="6" height="100" fill="#ffffff" opacity="0.97"/>
+  <rect x="880" y="85" width="6" height="45" fill="#ffffff" opacity="0.62"/>
+  <rect x="900" y="15" width="6" height="115" fill="#ffffff" opacity="0.88"/>
+  <rect x="920" y="110" width="6" height="20" fill="#ffffff" opacity="0.38"/>
+  <rect x="940" y="60" width="6" height="70" fill="#ffffff" opacity="0.86"/>
+  <rect x="960" y="90" width="6" height="40" fill="#ffffff" opacity="0.54"/>
+  <rect x="980" y="35" width="6" height="95" fill="#ffffff" opacity="0.92"/>
+  <rect x="1000" y="105" width="6" height="25" fill="#ffffff" opacity="0.3"/>
+  <rect x="1020" y="50" width="6" height="80" fill="#ffffff" opacity="0.82"/>
+  <rect x="1040" y="80" width="6" height="50" fill="#ffffff" opacity="0.66"/>
+  <rect x="1060" y="20" width="6" height="110" fill="#ffffff" opacity="0.99"/>
+  <rect x="1080" y="115" width="6" height="15" fill="#ffffff" opacity="0.2"/>
+  <rect x="1100" y="45" width="6" height="85" fill="#ffffff" opacity="0.83"/>
+  <rect x="1120" y="70" width="6" height="60" fill="#ffffff" opacity="0.74"/>
   
-  <!-- Side B text -->
-  <text x="950" y="170" font-family="JetBrains Mono, monospace" font-size="8" fill="#555555" text-anchor="middle" letter-spacing="2">SIDE B</text>
-  
-  <!-- Waveform decoration -->
-  <path d="M40,65 Q60,40 80,65 T120,65 T160,65 T200,65 T240,65 T280,65 T320,65 T360,65 T400,65" 
-        fill="none" stroke="#ffffff" stroke-width="1" opacity="0.2"/>
-  
-  <!-- Technical specs text -->
-  <text x="40" y="85" font-family="JetBrains Mono, monospace" font-size="9" fill="#444444" letter-spacing="1">AWTOPRIME25 RECORDS LTD.  ALL RIGHTS RESERVED.</text>
-  <text x="40" y="100" font-family="JetBrains Mono, monospace" font-size="8" fill="#333333" letter-spacing="1">ENGINEERED WITH C++ • TYPESCRIPT • PYTHON</text>
-  
-  <!-- Time markers like a tape -->
-  <text x="750" y="85" font-family="JetBrains Mono, monospace" font-size="10" fill="#555555" letter-spacing="2">00:00:00</text>
-  <text x="750" y="100" font-family="JetBrains Mono, monospace" font-size="8" fill="#333333" letter-spacing="1">ELAPSED TIME</text>
-  
-  <!-- Play indicator -->
-  <polygon points="1110,70 1110,90 1130,80" fill="#ffffff" opacity="0.8"/>
-  <text x="1145" y="84" font-family="JetBrains Mono, monospace" font-size="10" fill="#555555" letter-spacing="1">PLAYING</text>
-  
-  <!-- Bottom scanline -->
-  <line x1="0" y1="148" x2="1200" y2="148" stroke="#ffffff" stroke-width="0.5" opacity="0.1"/>
+  <!-- Bottom scanline effect -->
+  <rect x="0" y="148" width="1200" height="2" fill="#ffffff" opacity="0.1"/>
 </svg>
