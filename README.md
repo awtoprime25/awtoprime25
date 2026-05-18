@@ -29,6 +29,20 @@
 </table>
 </div>
 
+## Activity
+
+<div align="center">
+<table>
+<tr>
+<td align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=awtoprime25&custom_title=Contribution%20Activity&hide_border=true&bg_color=00000000&color=c9d1d9&line=ffffff&point=ffffff&area=true&area_color=ffffff&title_color=ffffff" width="100%" />
+
+</td>
+</tr>
+</table>
+</div>
+
 <br />
 
 <div align="center">
