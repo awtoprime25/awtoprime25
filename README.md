@@ -15,14 +15,14 @@
 
 **Languages**
 
-<img src="https://skillicons.dev/icons?i=cpp,ts,py,cs,js,html,css,php&theme=dark&perline=4" />
+<img src="https://skillicons.dev/icons?i=cpp,cs,ts,js,html,css,php,py&theme=dark&perline=4" />
 
 </td>
 <td align="center" width="50%">
 
 **Frameworks & Tools**
 
-<img src="https://skillicons.dev/icons?i=react,docker,git&theme=dark&perline=3" />
+<img src="https://skillicons.dev/icons?i=react,docker,git,leaflet&theme=dark&perline=3" />
 
 </td>
 </tr>
