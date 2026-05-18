@@ -1,6 +1,4 @@
-<!-- ACCENT COLOR: ffffff — find and replace to change the entire theme -->
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:2d2d2d,100:ffffff&height=180&section=header&text=Walter&fontSize=42&fontColor=ffffff&fontAlignY=50&animation=fadeIn&fontFamily=JetBrains+Mono" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,50:2d2d2d,100:ffffff&height=180&section=header&text=Walter&fontSize=42&fontColor=ffffff&fontAlignY=50&animation=fadeIn&fontFamily=JetBrains+Mono" />
 
 <div align="center">
 
@@ -38,4 +36,4 @@
   <a href="mailto:awtoprime25@gmail.com"><img src="https://img.shields.io/badge/Gmail-000000?style=for-the-badge&logo=gmail&logoColor=ffffff" /></a>
 </div>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:ffffff,50:2d2d2d,100:000000&height=120&section=footer" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:ffffff,50:2d2d2d,100:000000&height=120&section=footer" />
