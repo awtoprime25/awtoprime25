@@ -1,6 +1,6 @@
 <!-- ACCENT COLOR: ffffff — find and replace to change the entire theme -->
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:2d2d2d,100:ffffff&height=180&section=header&text=Walter&fontSize=42&fontColor=ffffff&fontAlignY=35&animation=fadeIn&desc=Student&descSize=18&descColor=c9d1d9&descAlignY=55&fontFamily=JetBrains+Mono" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:2d2d2d,100:ffffff&height=180&section=header&text=Walter&fontSize=42&fontColor=ffffff&fontAlignY=50&animation=fadeIn&fontFamily=JetBrains+Mono" />
 
 <div align="center">
 
@@ -25,20 +25,6 @@
 **Frameworks & Tools**
 
 <img src="https://skillicons.dev/icons?i=react,docker,git&theme=dark&perline=3" />
-
-</td>
-</tr>
-</table>
-</div>
-
-## Activity
-
-<div align="center">
-<table>
-<tr>
-<td align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=awtoprime25&custom_title=Contribution%20Activity&hide_border=true&bg_color=00000000&color=c9d1d9&line=ffffff&point=ffffff&area=true&area_color=ffffff&title_color=ffffff" width="100%" />
 
 </td>
 </tr>
