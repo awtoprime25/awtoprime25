@@ -36,7 +36,11 @@
 <tr>
 <td align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=awtoprime25&custom_title=Contribution%20Activity&hide_border=true&bg_color=00000000&color=c9d1d9&line=ffffff&point=ffffff&area=true&area_color=ffffff&title_color=ffffff" width="100%" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/awtoprime25/awtoprime25/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/awtoprime25/awtoprime25/output/snake.svg" />
+  <img alt="contribution snake animation" src="https://raw.githubusercontent.com/awtoprime25/awtoprime25/output/snake.svg" width="100%" />
+</picture>
 
 </td>
 </tr>
