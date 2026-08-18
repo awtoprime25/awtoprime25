@@ -34,7 +34,7 @@
 <div align="center">
   <a href="https://discordapp.com/users/reportimusprime"><img src="https://img.shields.io/badge/Discord-000000?style=for-the-badge&logo=discord&logoColor=ffffff" /></a>&nbsp;
   <a href="mailto:awtoprime25@gmail.com"><img src="https://img.shields.io/badge/Gmail-000000?style=for-the-badge&logo=gmail&logoColor=ffffff" /></a>&nbsp;
-  <a href="https://github.com/awtoprime25/awtoprime25/blob/main/CV_Walter_Miguel_Mendes_Parra.pdf"><img src="https://img.shields.io/badge/Resume-000000?style=for-the-badge&logo=readdotcv&logoColor=ffffff" /></a>
+  <a href="https://awtoprime25.github.io/awtoprime25/"><img src="https://img.shields.io/badge/Resume-000000?style=for-the-badge&logo=readdotcv&logoColor=ffffff" /></a>
 </div>
 
 <img src="https://raw.githubusercontent.com/awtoprime25/awtoprime25/main/footer.svg" width="100%" />

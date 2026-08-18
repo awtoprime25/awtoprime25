@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV — Walter Miguel Mendes Parra</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5d687b;
+      --line: #dce3ec;
+      --paper: #ffffff;
+      --soft: #f4f7fa;
+      --navy: #10233f;
+      --teal: #16a6a0;
+      --orange: #f0a35b;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: #e7edf3;
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 9.2pt;
+      line-height: 1.28;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .toolbar {
+      width: 210mm;
+      margin: 18px auto 10px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+    .toolbar button, .toolbar a {
+      border: 0;
+      border-radius: 8px;
+      background: var(--navy);
+      color: white;
+      padding: 9px 14px;
+      font-size: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .toolbar button:hover, .toolbar a:hover { background: #1c3d68; }
+    .toolbar a.secondary { background: var(--teal); }
+    .toolbar a.secondary:hover { background: #0f8983; }
+
+    .page {
+      width: 210mm;
+      height: 297mm;
+      min-height: 0;
+      margin: 0 auto 24px;
+      display: grid;
+      grid-template-columns: 67mm 1fr;
+      background: var(--paper);
+      box-shadow: 0 10px 35px rgba(24, 44, 70, .16);
+      overflow: hidden;
+    }
+
+    .sidebar {
+      background: var(--navy);
+      color: #fff;
+      padding: 15mm 8mm 11mm;
+      position: relative;
+    }
+    .sidebar::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--teal), var(--orange));
+    }
+    .monogram {
+      width: 84px;
+      height: 84px;
+      border: 2px solid rgba(255,255,255,.35);
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 19px;
+    }
+    .monogram img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+    .side-heading {
+      color: #8fe2dc;
+      font-size: 8.5pt;
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-weight: 700;
+      margin: 16px 0 7px;
+    }
+    .contact { margin: 0; padding: 0; list-style: none; }
+    .contact li { margin: 0 0 6px; overflow-wrap: anywhere; }
+    .contact .label {
+      display: block;
+      color: #93a7c1;
+      text-transform: uppercase;
+      font-size: 7.2pt;
+      letter-spacing: .12em;
+      margin-bottom: 1px;
+    }
+    .contact a { color: #8fe2dc; text-decoration: underline; }
+    .side-copy { color: #d6deea; margin: 0 0 4px; }
+    .skill { margin: 0 0 5px; }
+    .skill strong { display: block; font-size: 9.2pt; }
+    .skill span { color: #b9c6d7; font-size: 8.5pt; }
+    .language { margin-bottom: 6px; }
+    .language strong { display: block; }
+    .language span { color: #c3d0df; font-size: 8.7pt; }
+
+    .main { padding: 10mm 12mm 5mm; }
+    .eyebrow {
+      color: var(--teal);
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: 8pt;
+      font-weight: 700;
+      margin: 0 0 5px;
+    }
+    h1 {
+      font-size: 25pt;
+      line-height: 1.05;
+      letter-spacing: -.035em;
+      margin: 0;
+      color: var(--navy);
+    }
+    .role {
+      font-size: 11pt;
+      color: var(--muted);
+      margin: 5px 0 10px;
+    }
+    .intro {
+      border-left: 3px solid var(--orange);
+      padding: 2px 0 2px 12px;
+      margin-bottom: 8px;
+      color: #3e4a5c;
+    }
+    .section { margin-top: 8px; }
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: .13em;
+      font-size: 8.4pt;
+      font-weight: 800;
+      margin: 0 0 6px;
+    }
+    .section-title::after {
+      content: "";
+      height: 1px;
+      flex: 1;
+      background: var(--line);
+    }
+    .education {
+      background: var(--soft);
+      border-radius: 10px;
+      padding: 7px 10px;
+      position: relative;
+    }
+    .education::before {
+      content: "";
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 4px;
+      border-radius: 10px 0 0 10px;
+      background: var(--teal);
+    }
+    .item { margin-bottom: 4px; }
+    .item:last-child { margin-bottom: 0; }
+    .item-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+    }
+    .item h3 { font-size: 10.5pt; margin: 0; color: var(--navy); }
+    .date {
+      color: var(--teal);
+      font-size: 8.4pt;
+      white-space: nowrap;
+      font-weight: 700;
+    }
+    .place { color: var(--muted); font-size: 9pt; margin: 1px 0 5px; }
+    .experience-summary { color: #4b5668; font-size: 8.8pt; margin: 4px 0 0; }
+    .grade {
+      display: inline-block;
+      background: #e4f6f4;
+      color: #087a76;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 8pt;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    ul { margin: 3px 0 0; padding-left: 15px; color: #4b5668; }
+    li { margin-bottom: 1px; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 3px 6px;
+      color: #33435b;
+      font-size: 8.8pt;
+    }
+    .project { border-bottom: 1px solid var(--line); padding: 0 0 4px; margin-bottom: 4px; }
+    .project:last-child { border-bottom: 0; margin-bottom: 0; }
+    .project strong { color: var(--navy); }
+    .project span { color: var(--muted); font-size: 8.8pt; }
+    .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; }
+    .projects-grid .project a { color: var(--teal); text-decoration: underline; }
+    .footer-note {
+      margin-top: 9px;
+      padding-top: 5px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 8.2pt;
+    }
+
+    @media print {
+      @page { size: A4; margin: 0; }
+      body { background: white; }
+      .toolbar { display: none; }
+      .page { margin: 0; box-shadow: none; }
+    }
+    @media screen and (max-width: 850px) {
+      .toolbar, .page { width: 100%; }
+      .page { grid-template-columns: 1fr; }
+      .sidebar { padding: 30px 28px; }
+      .main { padding: 30px 28px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar" aria-label="Ações">
+    <a class="secondary" href="CV_Walter_Miguel_Mendes_Parra.pdf" download>⬇ Download PDF</a>
+    <button onclick="window.print()">Imprimir / Guardar em PDF</button>
+  </div>
+
+  <main class="page">
+    <aside class="sidebar">
+      <div class="monogram"><img src="Walter-crop.png" alt="Walter Miguel Mendes Parra"></div>
+
+      <div class="side-heading">Contactos</div>
+      <ul class="contact">
+        <li><span class="label">Telefone</span>932 107 123</li>
+        <li><span class="label">Email</span><a href="mailto:waltermmparra@gmail.com">waltermmparra@gmail.com</a></li>
+        <li><span class="label">Localização</span>Faro, Portugal</li>
+        <li><span class="label">GitHub</span><a href="https://github.com/awtoprime25">github.com/awtoprime25</a></li>
+      </ul>
+
+      <div class="side-heading">Competências técnicas</div>
+      <div class="skill"><strong>Programação</strong><span>PHP · TypeScript · C++ · Python</span></div>
+      <div class="skill"><strong>Desenvolvimento web</strong><span>HTML · projetos web</span></div>
+      <div class="skill"><strong>Sistemas e ferramentas</strong><span>GitHub · Visual Studio Code</span></div>
+      <div class="skill"><strong>Áreas de interesse</strong><span>Inteligência artificial · tecnologias digitais</span></div>
+
+      <div class="side-heading">Idiomas</div>
+      <div class="language"><strong>Português</strong><span>Língua materna</span></div>
+      <div class="language"><strong>Inglês</strong><span>Média: 18 valores</span></div>
+
+      <div class="side-heading">Perfil pessoal</div>
+      <p class="side-copy">Responsável, motivado e com vontade de aprender.</p>
+      <p class="side-copy">Interesse por programação, sistemas informáticos e IA.</p>
+    </aside>
+
+    <section class="main">
+      <p class="eyebrow">Curriculum Vitae</p>
+      <h1>Walter Miguel<br>Mendes Parra</h1>
+      <p class="role">Candidato ao CTeSP de Sistemas e Tecnologias da Informação</p>
+
+      <p class="intro">Estudante de informática com média global de <strong>17 valores</strong>, experiência em formação em contexto de trabalho e motivação para continuar a crescer na área das tecnologias da informação.</p>
+
+      <section class="section">
+        <h2 class="section-title">Formação</h2>
+        <div class="education">
+          <div class="item-head">
+            <h3>Técnico de Gestão e Programação de Sistemas Informáticos</h3>
+            <span class="date">2023 — 2026</span>
+          </div>
+          <p class="place">Pinheiro e Rosa · Faro</p>
+          <span class="grade">Média global: 17 valores</span>
+          <ul>
+            <li>Programação e desenvolvimento de aplicações;</li>
+            <li>Sistemas operativos, redes e bases de dados;</li>
+            <li>Tecnologias web e gestão de sistemas informáticos.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Experiência</h2>
+        <div class="item">
+          <div class="item-head"><h3>Formação em contexto de trabalho</h3><span class="date">2024</span></div>
+          <p class="place">Pinheiro e Rosa</p>
+          <span class="grade">16 valores</span>
+          <p class="experience-summary">Aplicação prática dos conhecimentos de informática, desenvolvimento de responsabilidade e trabalho em equipa.</p>
+        </div>
+        <div class="item">
+          <div class="item-head"><h3>Formação em contexto de trabalho</h3><span class="date">2025</span></div>
+          <p class="place">Clínica dos Tinteiros</p>
+          <span class="grade">19 valores</span>
+          <p class="experience-summary">Desenvolvimento de competências profissionais, organização, comunicação e contacto com o contexto de trabalho.</p>
+        </div>
+        <div class="item">
+          <div class="item-head"><h3>Formação em contexto de trabalho</h3><span class="date">2026</span></div>
+          <p class="place">Ginásios DaVinci</p>
+          <span class="grade">19 valores</span>
+          <p class="experience-summary">Desenvolvimento de websites e de uma aplicação em Python, reforçando competências de programação, autonomia e resolução de problemas.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Competências</h2>
+        <div class="tag-list">
+          <span class="tag">Responsabilidade</span>
+          <span class="tag">Organização</span>
+          <span class="tag">Trabalho em equipa</span>
+          <span class="tag">Comunicação</span>
+          <span class="tag">Resolução de problemas</span>
+          <span class="tag">Aprendizagem autónoma</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Projetos</h2>
+        <div class="projects-grid">
+          <div class="project"><a href="https://estudar-em-portugal.com" target="_blank"><strong>Estudar em Portugal</strong></a><br><span>Plataforma PHP · estudar-em-portugal.com</span></div>
+          <div class="project"><a href="https://www.ginasiosdavinci.com/estudar-no-estrangeiro/" target="_blank"><strong>Estudar no Estrangeiro</strong></a><br><span>Site Ginásios DaVinci</span></div>
+          <div class="project"><a href="https://www.ginasiosdavinci.com/noticias-local/" target="_blank"><strong>Notícias Local</strong></a><br><span>Blog de notícias com IA</span></div>
+          <div class="project"><a href="https://pap-vanitysign-a6fd9.web.app" target="_blank"><strong>VanitySign</strong></a><br><span>Site de reservas de transfers</span></div>
+          <div class="project"><a href="https://github.com/awtoprime25/opencode-for-vscode" target="_blank"><strong>opencode-for-vscode</strong></a><br><span>Extensão para VS Code</span></div>
+          <div class="project"><a href="https://github.com/awtoprime25/dispatchbuff" target="_blank"><strong>DispatchBuff</strong></a><br><span>Controlo remoto por telemóvel</span></div>
+          <div class="project"><a href="https://awtoprime25.github.io/rollercoin-hashrate-lens-site/" target="_blank"><strong>RollerCoin Hashrate Lens</strong></a><br><span>Extensão de browser</span></div>
+        </div>
+      </section>
+
+      <p class="footer-note">Objetivo: prosseguir estudos no CTeSP de Sistemas e Tecnologias da Informação da Universidade do Algarve.</p>
+    </section>
+  </main>
+</body>
+</html>
