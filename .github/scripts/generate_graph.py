@@ -75,7 +75,7 @@ def build_svg(weeks, total):
                 f'fill="{color}" stroke="#1a1a1a" stroke-width="0.5"/>'
             )
 
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {canvas_w} {canvas_h}">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{canvas_w}" height="{canvas_h}" viewBox="0 0 {canvas_w} {canvas_h}">
   <rect width="{canvas_w}" height="{canvas_h}" fill="#0a0a0a"/>
   <defs>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
