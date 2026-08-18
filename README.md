@@ -29,14 +29,6 @@
 </table>
 </div>
 
-## Activity
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/awtoprime25/awtoprime25/main/contribution-graph.svg" width="100%" />
-
-</div>
-
 <br />
 
 <div align="center">
