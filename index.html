@@ -35,7 +35,7 @@
       justify-content: flex-end;
       gap: 8px;
     }
-    .toolbar button {
+    .toolbar button, .toolbar a {
       border: 0;
       border-radius: 8px;
       background: var(--navy);
@@ -43,8 +43,12 @@
       padding: 9px 14px;
       font-size: 12px;
       cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
     }
-    .toolbar button:hover { background: #1c3d68; }
+    .toolbar button:hover, .toolbar a:hover { background: #1c3d68; }
+    .toolbar a.secondary { background: var(--teal); }
+    .toolbar a.secondary:hover { background: #0f8983; }
 
     .page {
       width: 210mm;
@@ -241,6 +245,7 @@
 </head>
 <body>
   <div class="toolbar" aria-label="Ações">
+    <a class="secondary" href="CV_Walter_Miguel_Mendes_Parra.pdf" download>⬇ Download PDF</a>
     <button onclick="window.print()">Imprimir / Guardar em PDF</button>
   </div>
 
