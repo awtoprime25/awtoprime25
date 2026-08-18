@@ -36,11 +36,7 @@
 <tr>
 <td align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/awtoprime25/awtoprime25/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/awtoprime25/awtoprime25/output/snake.svg" />
-  <img alt="contribution snake animation" src="https://raw.githubusercontent.com/awtoprime25/awtoprime25/output/snake.svg" width="100%" />
-</picture>
+<img src="https://raw.githubusercontent.com/awtoprime25/awtoprime25/main/contribution-graph.svg" width="100%" />
 
 </td>
 </tr>
