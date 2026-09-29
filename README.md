@@ -31,7 +31,8 @@
 
 **Databases (SQL & NoSQL)**
 
-<img src="https://skillicons.dev/icons?i=mysql,postgres,sqlite,mongodb&theme=dark&perline=4" />
+<img src="https://img.shields.io/badge/SQL-000000?style=for-the-badge&logo=databricks&logoColor=ffffff" />
+<img src="https://img.shields.io/badge/NoSQL-000000?style=for-the-badge&logo=databricks&logoColor=ffffff" />
 
 </td>
 <td align="center" width="50%">
