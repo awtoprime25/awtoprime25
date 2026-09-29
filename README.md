@@ -29,7 +29,7 @@
 <tr>
 <td align="center" width="50%">
 
-**Databases (SQL & NoSQL)**
+**Databases**
 
 <img src="https://img.shields.io/badge/SQL-000000?style=for-the-badge&logo=databricks&logoColor=ffffff" />
 <img src="https://img.shields.io/badge/NoSQL-000000?style=for-the-badge&logo=databricks&logoColor=ffffff" />
