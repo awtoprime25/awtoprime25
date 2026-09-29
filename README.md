@@ -15,15 +15,19 @@
 
 **Languages**
 
-<img src="https://skillicons.dev/icons?i=rust,cpp,cs,ts,js,html,css,php,py&theme=dark&perline=5" />
+<img src="https://skillicons.dev/icons?i=rust,cpp,cs,ts,js&theme=dark" />
+<br />
+<img src="https://skillicons.dev/icons?i=html,css,php,py&theme=dark" />
 
 </td>
 <td align="center" width="50%">
 
 **Frameworks & Tools**
 
-<img src="https://skillicons.dev/icons?i=react,dotnet,docker,git,github,githubactions,npm,vscode,visualstudio&theme=dark&perline=5" />
-
+<img src="https://skillicons.dev/icons?i=react,dotnet,docker,git,github&theme=dark" />
+<br />
+<img src="https://skillicons.dev/icons?i=githubactions,npm,vscode,visualstudio&theme=dark" />
+<br /><br />
 <img src="https://img.shields.io/badge/Stripe-000000?style=for-the-badge&logo=stripe&logoColor=ffffff" />
 
 </td>
