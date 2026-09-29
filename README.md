@@ -22,7 +22,9 @@
 
 **Frameworks & Tools**
 
-<img src="https://skillicons.dev/icons?i=react,docker,git&theme=dark&perline=3" />
+<img src="https://skillicons.dev/icons?i=react,dotnet,docker,git,github,githubactions,npm,vscode,visualstudio&theme=dark&perline=5" />
+
+<img src="https://img.shields.io/badge/Stripe-000000?style=for-the-badge&logo=stripe&logoColor=ffffff" />
 
 </td>
 </tr>
@@ -43,6 +45,9 @@
 <img src="https://img.shields.io/badge/OpenCode-000000?style=for-the-badge&logo=gnubash&logoColor=ffffff" />
 <img src="https://img.shields.io/badge/Freebuff-000000?style=for-the-badge&logo=codeberg&logoColor=ffffff" />
 <img src="https://img.shields.io/badge/MiMo_Code-000000?style=for-the-badge&logo=xiaomi&logoColor=ffffff" />
+<img src="https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=ffffff" />
+<img src="https://img.shields.io/badge/Gemini_CLI-000000?style=for-the-badge&logo=googlegemini&logoColor=ffffff" />
+<img src="https://img.shields.io/badge/Amoeba-000000?style=for-the-badge&logo=gnubash&logoColor=ffffff" />
 
 </td>
 </tr>
