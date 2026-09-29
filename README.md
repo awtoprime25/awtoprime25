@@ -15,7 +15,7 @@
 
 **Languages**
 
-<img src="https://skillicons.dev/icons?i=cpp,cs,ts,js,html,css,php,py&theme=dark&perline=4" />
+<img src="https://skillicons.dev/icons?i=rust,cpp,cs,ts,js,html,css,php,py&theme=dark&perline=5" />
 
 </td>
 <td align="center" width="50%">
@@ -23,6 +23,25 @@
 **Frameworks & Tools**
 
 <img src="https://skillicons.dev/icons?i=react,docker,git&theme=dark&perline=3" />
+
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+
+**Databases (SQL & NoSQL)**
+
+<img src="https://skillicons.dev/icons?i=mysql,postgres,sqlite,mongodb&theme=dark&perline=4" />
+
+</td>
+<td align="center" width="50%">
+
+**AI Coding Tools**
+
+<img src="https://img.shields.io/badge/Claude_Code-000000?style=for-the-badge&logo=claude&logoColor=D97757" />
+<img src="https://img.shields.io/badge/OpenCode-000000?style=for-the-badge&logo=gnubash&logoColor=ffffff" />
+<img src="https://img.shields.io/badge/Freebuff-000000?style=for-the-badge&logo=codeberg&logoColor=ffffff" />
+<img src="https://img.shields.io/badge/MiMo_Code-000000?style=for-the-badge&logo=xiaomi&logoColor=ffffff" />
 
 </td>
 </tr>
